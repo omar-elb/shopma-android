@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackground">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:titleTextColor="@android:color/white"
+        app:title="@string/app_name" />
+
+    <TextView
+        android:id="@+id/tvGreeting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryLight"
+        android:padding="@dimen/spacing_medium"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="3"
+        android:padding="@dimen/spacing_small">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardAllProducts"
+            android:layout_width="0dp" android:layout_height="120dp"
+            android:layout_columnWeight="1" android:layout_margin="@dimen/spacing_small"
+            app:cardCornerRadius="8dp" app:cardElevation="2dp">
+            <TextView android:layout_width="match_parent" android:layout_height="match_parent"
+                android:gravity="center" android:text="@string/category_all" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardElectronics"
+            android:layout_width="0dp" android:layout_height="120dp"
+            android:layout_columnWeight="1" android:layout_margin="@dimen/spacing_small"
+            app:cardCornerRadius="8dp" app:cardElevation="2dp">
+            <TextView android:layout_width="match_parent" android:layout_height="match_parent"
+                android:gravity="center" android:text="@string/category_electronics" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardJewelery"
+            android:layout_width="0dp" android:layout_height="120dp"
+            android:layout_columnWeight="1" android:layout_margin="@dimen/spacing_small"
+            app:cardCornerRadius="8dp" app:cardElevation="2dp">
+            <TextView android:layout_width="match_parent" android:layout_height="match_parent"
+                android:gravity="center" android:text="@string/category_jewelery" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardMenClothing"
+            android:layout_width="0dp" android:layout_height="120dp"
+            android:layout_columnWeight="1" android:layout_margin="@dimen/spacing_small"
+            app:cardCornerRadius="8dp" app:cardElevation="2dp">
+            <TextView android:layout_width="match_parent" android:layout_height="match_parent"
+                android:gravity="center" android:text="@string/category_men" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardWomenClothing"
+            android:layout_width="0dp" android:layout_height="120dp"
+            android:layout_columnWeight="1" android:layout_margin="@dimen/spacing_small"
+            app:cardCornerRadius="8dp" app:cardElevation="2dp">
+            <TextView android:layout_width="match_parent" android:layout_height="match_parent"
+                android:gravity="center" android:text="@string/category_women" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardPickupPoints"
+            android:layout_width="0dp" android:layout_height="120dp"
+            android:layout_columnWeight="1" android:layout_margin="@dimen/spacing_small"
+            app:cardCornerRadius="8dp" app:cardElevation="2dp">
+            <TextView android:layout_width="match_parent" android:layout_height="match_parent"
+                android:gravity="center" android:text="@string/category_pickup" />
+        </androidx.cardview.widget.CardView>
+
+    </GridLayout>
+</LinearLayout>

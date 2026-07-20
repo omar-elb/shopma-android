@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">ShopMa</string>
+    <string name="logo_letter">S</string>
+    <string name="login_subtitle">Votre marketplace marocain</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Mot de passe</string>
+    <string name="hint_name">Nom complet</string>
+    <string name="remember_me">Se rappeler de moi</string>
+    <string name="btn_login">Se connecter</string>
+    <string name="register_link">Pas encore de compte ? Créer un compte</string>
+    <string name="register_title">Créer un compte</string>
+    <string name="btn_register">Créer</string>
+    <string name="btn_cancel">Annuler</string>
+    <string name="greeting_format">Bonjour, %1$s</string>
+    <string name="cart_items_format">%1$d articles dans le panier</string>
+    <string name="category_all">Tous les produits</string>
+    <string name="category_electronics">Electronique</string>
+    <string name="category_jewelery">Bijoux</string>
+    <string name="category_men">Mode Homme</string>
+    <string name="category_women">Mode Femme</string>
+    <string name="category_pickup">Points de retrait</string>
+    <string name="action_cart">Panier</string>
+    <string name="action_profile">Profile</string>
+    <string name="icon_cart">🛒</string>
 </resources>

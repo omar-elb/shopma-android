@@ -6,6 +6,7 @@ import com.shopma.data.remote.dto.ProductDto;
 import com.shopma.domain.callback.DataCallback;
 import com.shopma.domain.model.Product;
 import com.shopma.domain.repository.ProductRepository;
+import com.shopma.data.remote.ApiErrorParser;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -27,7 +28,7 @@ public class ProductRepositoryImpl implements ProductRepository {
                 if (response.isSuccessful() && response.body() != null) {
                     callback.onSuccess(ProductMapper.toDomainList(response.body()));
                 } else {
-                    callback.onError("Erreur serveur (" + response.code() + ")");
+                    callback.onError(ApiErrorParser.parse(response));
                 }
             }
             @Override
@@ -45,7 +46,7 @@ public class ProductRepositoryImpl implements ProductRepository {
                 if (response.isSuccessful() && response.body() != null) {
                     callback.onSuccess(ProductMapper.toDomainList(response.body()));
                 } else {
-                    callback.onError("Erreur serveur (" + response.code() + ")");
+                    callback.onError(ApiErrorParser.parse(response));
                 }
             }
             @Override
@@ -63,7 +64,7 @@ public class ProductRepositoryImpl implements ProductRepository {
                 if (response.isSuccessful() && response.body() != null) {
                     callback.onSuccess(response.body());
                 } else {
-                    callback.onError("Erreur serveur (" + response.code() + ")");
+                    callback.onError(ApiErrorParser.parse(response));
                 }
             }
             @Override
