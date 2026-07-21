@@ -22,4 +22,5 @@
     <string name="action_cart">Panier</string>
     <string name="action_profile">Profile</string>
     <string name="icon_cart">🛒</string>
+    <string name="quantity_format">Quantité : %1$d</string>
 </resources>
